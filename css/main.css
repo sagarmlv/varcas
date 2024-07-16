@@ -1,0 +1,856 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
+}
+
+/***** Heading Or Navbaar  *****/
+
+/* Custom styles for the navbar */
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(43, 34, 34, 0.6);
+    padding: 0;
+}
+
+.logo {
+    width: 350px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+    transition: ease-in-out .5s;
+    color: red;
+   
+}
+
+.navbar-toggler {
+    border: none;
+    /* Remove border for a cleaner look */
+}
+
+.navbar-toggler-icon {
+    background-color: transparent;
+    /* Color of the toggler icon */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    /* Navbar link color */
+    color: #2185a0;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #25a989;
+    border-radius: 10px;
+    color: white;
+    transition: all .05s ease-in-out;
+    /* Navbar link color on hover */
+}
+
+/***** End Heading Or Navbaar  *****/
+
+
+
+/* Example styling for the carousel section */
+
+.carousel-img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    transform: translateY(15rem);
+    text-align: center;
+    opacity: 1
+}
+
+.carousel-caption h2 {
+    font-size: 4rem;
+}
+
+#caps {
+  
+   font-size: 1.5rem;  
+}
+
+
+/* HEADING ANIMATIONS */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  30%, 40% { transform: translate3d(0, 55%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #ffffff;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 145vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+#heads{
+    font-size: 9vmin;
+   position: relative;
+   left:3%;
+   
+      
+}
+
+#capt{
+    font-size: 4vmin;
+    
+}
+
+
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #ffffff;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: white;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+@media (max-width: 600px) {
+    
+    .animated-title{
+        width: 50%;
+    }
+
+    .carousel-img{
+        height:70vh;
+
+    }
+
+
+
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+.downarrow {
+
+
+    transform: rotate(90deg);
+    color: #2185a0;
+    background-color: rgb(56, 169, 231);
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 10px;
+
+
+}
+
+.title-img {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.title-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    /* Adjust the alpha (last value) for darkness */
+}
+
+.title-img img {
+    width: 100%;
+    height: 100%;
+
+    filter: blur(.6px);
+}
+
+
+.Heading1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* height: 100vh; Full viewport height */
+    text-align: center;
+    /* Center text within the div */
+    padding: 0 10px;
+    /* Add padding to avoid text touching edges */
+
+}
+
+.Heading1 h2 {
+    font-size: 2em;
+    /* Adjust as needed */
+    margin: 0;
+    word-wrap: break-word;
+    /* Allow text to wrap within the container */
+}
+
+@media (max-width:768px) {
+    .Heading1 h2 {
+        font-size: .5rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    #heads {
+        font-size: 1.3rem;
+
+    }
+}
+
+@media (max-width: 500px) {
+    #heads2 {
+        font-size: .9rem;
+        color: #ffffff;
+        font-weight: 1000;
+
+
+    }
+}
+
+
+
+.title-img h2 {
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    overflow: hidden;
+    /* Hide overflowing content during animation */
+    white-space: nowrap;
+    /* Ensure the text stays on one line */
+    border-right: 2px solid white;
+    /* Simulate the blinking cursor */
+    animation: typing 4s steps(50) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 102%;
+    }
+}
+
+#home-section {
+    width: 100%;
+    height: 100%;
+    background-color: #25a98987;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Slider {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 1.0);
+}
+
+.Slider .carousel {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(43, 34, 34, 0.6);
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.85;
+}
+
+.carousel-caption {
+    position: absolute !important;
+    width: 100%;
+    padding: 10px;
+    height: 60px;
+    top: 0px;
+    left: 0 !important;
+    color: whitesmoke;
+    text-align: center;
+    animation-name: home-heading;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+.carousel-caption:hover {
+
+    transition: all 1s easy-in-out;
+    color: white;
+
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    /* Font size for the paragraph in the caption */
+}
+
+/***** End Slider_Home *****/
+
+/***** Welcome section *****/
+
+#welcome {
+    padding: 50px 0;
+    background-color: #2185a0;
+    color: white;
+    position: relative;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.heading-text .lead {
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+
+}
+
+
+
+/* Desktop Product  */
+
+.heading-product-master {
+    padding: 30px;
+    background-color: #2185a0;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    border-top: 5px solid white;
+}
+
+
+#pheading {
+
+    font-size: 2rem;
+
+}
+
+.heading-product-master h1 {
+    position: relative;
+    /* Add this to ensure z-index works */
+    z-index: 1;
+    /* Add this to ensure the text is on top */
+    display: inline;
+    /* Keep the background only as wide as the text */
+    padding: 0 10px;
+    /* Optional: Add padding to the background */
+}
+
+.heading-product-master h1::before {
+    content: '';
+    /* Empty content, necessary for the pseudo-element to appear */
+    display: block;
+    /* Make it a block-level element to take the full width */
+    height: 2px;
+    /* Set the height of the underline */
+    width: 100%;
+    /* Set the width of the underline */
+    background-color: #01ffc1;
+    /* Set the color of the underline */
+    position: absolute;
+    /* Position it absolutely relative to the .Heading */
+    bottom: 0;
+    /* Position it at the bottom of the .Heading */
+    left: 0;
+    /* Align it to the left */
+}
+
+.product-contain {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.product-main-box {
+    padding: 20px;
+}
+
+/* Add custom styling for the product cards */
+
+.product-contain-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 18rem;
+    padding: 10px;
+    background-color: rgb(158 158 158 / 5%);
+    box-shadow: 2px 2px 5px rgba(43, 64, 64, 1.0);
+    position: relative;
+    transition: all 2s easy-in-out;
+}
+
+.product-contain-wrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.product-name {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.product-name h3 {
+    font-size: 24px;
+    padding: 10px;
+    color: blueviolet;
+}
+
+.description {
+    text-align: center;
+    justify-content: center;
+    text-align: justify;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+
+
+/* Introduction Section */
+
+.introduction-section {
+    width: 100%;
+
+}
+
+.intro-heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.intro-heading h2 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.intro-heading h2::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #01ffc1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.intro-heading .intro-lead {
+    padding: 20px;
+    text-align: justify;
+    text-align: center;
+    font-size: 18px;
+}
+
+.intro-contain {
+    padding: 30px;
+    background-color: #2185a0;
+
+    color: white;
+    margin-top: 20px;
+}
+
+.intro-contain-product {
+    display: flex;
+    align-items: center;
+    /* Align items vertically in the center */
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #25a989;
+    background-color: #25a989;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Adding transition for smooth hover effect */
+    display: inline-flex;
+    /* Ensure the icon container doesn't break to the next line */
+    align-items: center;
+    /* Vertically center the icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon:hover {
+    background-color: #25a98982;
+    /* Change the background color on hover */
+    transform: scale(1.1);
+    /* Optional: Add a slight scale effect on hover */
+}
+
+.icon i {
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+}
+
+.intro-contain-list {
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.intro-contain-product:hover .intro-contain-list {
+    background-color: #25a989;
+    color: white;
+}
+
+.intro-contain-list h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.intro-contain-list p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+
+/* testimonials */
+
+/* Testimonials Section */
+
+.testi {
+    padding-top: 10px;
+
+
+}
+
+
+
+.testimonials-heading h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.testimonials-heading p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.testimonials-carousel {
+    margin-top: 2em;
+}
+
+.testimonials-carousel .testimonial-item {
+    background: #f2f1f0;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+
+.hove:hover {
+    transform: scale(1.05);
+}
+
+.testimonials-carousel .testimonial-item p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.testimonials-carousel .client-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.testimonials-carousel .client-location {
+    display: block;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .testimonials-heading h2 {
+        font-size: 2em;
+    }
+
+    .testimonials-heading p {
+        font-size: 1em;
+    }
+
+    .testimonials-carousel .testimonial-item {
+        padding: 1.5em;
+    }
+
+    .testimonials-carousel .testimonial-item p {
+        font-size: 1em;
+    }
+
+    .testimonials-carousel .client-name {
+        font-size: 1em;
+    }
+
+    .testimonials-carousel .client-location {
+        font-size: 0.8em;
+    }
+}
+
+
+
+
+
+/*** Product type images *****/
+
+#product-type {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.product-head {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: #2185a0;
+}
+
+.product-head h1 {
+    font-style: italic;
+    padding: 20px;
+}
+
+.pro-type-img,
+.pro-details-img {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    margin: 10px;
+    position: relative;
+    transition: filter 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(43, 34, 34, 0.3);
+}
+
+.pro-type-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.pro-details-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.pro-type-img:hover img,
+.pro-details-img:hover img {
+    filter: blur(.4px);
+}
+
+/***** End Product type images *****/
+
+/***** End Welcome section *****/
+
+#footer {
+    background-color: #2185a0;
+    color: white;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    font-style: italic;
+    position: relative;
+    letter-spacing: 1px;
+    border-top: 5px solid white;
+}
+
+.heading-footer {
+    font-weight: bold;
+    border-bottom: #01ffc1 2px solid;
+    margin-bottom: 10px;
+}
+
+.contain-text {
+    position: relative;
+    letter-spacing: 1px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 2%;
+    /* Set your desired background color */
+}
+
+.nav-item1 {
+    padding: 1px;
+}
+
+.nav-link1 {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link1:hover {
+    color: #01ffc1;
+    ;
+    /* Set your desired hover color */
+}
+
+.logo-footer {
+    /*background-color: #01ffc1;*/
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    opacity: 0.4;
+}
+
+.logo-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}

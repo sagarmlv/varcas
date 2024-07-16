@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link href="./css/products.css" rel="stylesheet" type="text/css">
+    <link href="./css/main-sub-product.css" rel="stylesheet" type="text/css">
+    <title>
+        Varcas Stainless
+    </title>
+    </link>
+    </link>
+    </link>
+    <script type="text/javascript" src="script.js"></script>
+    </meta>
+    </meta>
+    <meta name="description" content="Varcas Stainless Steel Factory specializes in manufacturing high-quality stainless steel products for residential, commercial, and industrial applications. Explore our wide range of durable and aesthetically pleasing stainless steel solutions.">
+    <meta name="keywords" content="varcas, stainless steel, factory, products, residential, commercial, industrial">
+</head>
+<!-- Header Section -->
+<header id="header container-fluid">
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container">
+            <div class="logo">
+                <a class="navbar-brand" href="Index.html">
+                    <img src="./Images/logo.jpg" />
+                </a>
+            </div>
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">
+                            Products
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="material.html">
+                            Material
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactUs.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <style>
+    /* Scrollbar */
+
+
+
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        overflow-y: hidden;
+        /* Hide vertical scrollbar by default */
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        /* Optional: Enables momentum scrolling in iOS Safari */
+    }
+
+    .carousel::-webkit-scrollbar {
+        height: 7px;
+    }
+
+    .carousel::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        /* Track color */
+        border-radius: 7px;
+        /* Rounded corners */
+    }
+
+    .carousel::-webkit-scrollbar-thumb {
+        background: #c5c5c5;
+        /* Thumb color */
+        border-radius: 10px;
+        /* Rounded corners */
+    }
+
+    .carousel::-webkit-scrollbar-thumb:hover {
+        background: #d5d5d5;
+        /* Hovered thumb color */
+    }
+
+
+
+    /* type heading */
+
+    .header {
+        background-color: #2185a0;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        align-items: baseline;
+        height: 100px;
+        border-bottom: 5px solid rgb(72, 235, 211);
+        ;
+        border-top: 5px solid rgb(72, 235, 211);
+
+    }
+
+    .header p {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .header p {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .header p {
+            font-size: 18px;
+        }
+    }
+
+    /* Silder */
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        /* Optional: Enables momentum scrolling in iOS Safari */
+    }
+
+    .portfolio-item {
+        flex: 0 0 auto;
+        margin-right: 10px;
+        /* Adjust as needed */
+        scroll-snap-align: start;
+        margin: 10px;
+    }
+
+    .portfolio-item-wrap {
+        width: 300px;
+        /* Adjust the width as needed */
+        height: 300px;
+        /* Adjust the height as needed */
+        overflow: hidden;
+        border: 1px solid #ccc;
+        /* Border style */
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    .portfolio-image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .portfolio-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Maintain aspect ratio and cover the container */
+        border-radius: 10px;
+        /* Rounded corners for the image */
+    }
+
+
+
+
+
+
+    /* products */
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+
+
+    @media (max-width: 500px) {
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 400px) {
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+    @media (max-width: 290px) {
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+
+    .gallery-box {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+        /* Ensure image doesn't exceed box boundaries */
+    }
+
+    .gallery-header {
+        background-color: #2185a0;
+        color: white;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .gallery-image {
+        padding: 10px;
+    }
+
+    .gallery-image img {
+        max-width: 100%;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+
+
+
+    /* Dropdown */
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #2185a0;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        width: 200px;
+        border-radius: 7px;
+
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        border-radius: 7px;
+        color: white;
+    }
+
+    .dropdown-content a:hover {
+        background-color: white;
+        color: #2185a0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    </style>
+    <script>
+    //  Dropdown 
+
+
+    // JavaScript for hover effect (optional)
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    dropdown.addEventListener('mouseenter', function() {
+        dropdownContent.style.display = 'block';
+    });
+
+    dropdown.addEventListener('mouseleave', function() {
+        dropdownContent.style.display = 'none';
+    });
+
+    // dropdown scroll 
+
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    </script>
+    <!-- products header -->
+    <section id="products">
+        <div class="container-fluid p-0 m-0 product-section1">
+            <div class="row p-0 m-0">
+                <div class="col-lg-12 p-0 m-0 product-item-details">
+                    <div class="row cateory">
+                        <div class="row category">
+                            <ul>
+                                <li>
+                                    <button class="btn-nav" data-category="all" onclick="showCategory('all')">
+                                        All
+                                    </button>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="Butt-weld-pro" onclick="window.location.href='Fittings2.html'">
+                                        Fittings
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="Flanges-pro" onclick="window.location.href='Flanges2.html'">
+                                        Flanges
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="Fasteners-pro" onclick="window.location.href='Fasteners2.html'">
+                                        Fasteners
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="pipe-tube-pro" onclick="window.location.href='Pipes&Tubes2.html'">
+                                        Pipes & Tubes
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="Bar&wires-pro" onclick="window.location.href='Bars&Wires2.html'">
+                                        Bars & Wires
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="Customised-Fabrication" onclick="window.location.href='CustomizedFabrication2.html'">
+                                        Customised Fabrication
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- products header -->
+                    <div style="border-top: 5px solid white;"></div>
+                    <div class="container-fluid p-0 m-0 custom-heading">
+                        <div class="container p-0">
+                            <div class="custom-heading-content">
+                                <h1>
+                                    Customized Fabrication: A Comprehensive Overview
+                                </h1>
+                                <p>
+                                    Here's a detailed explanation of Customized Fabrication:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- details -->
+                    <div class="container intro-container">
+                        <div class="row">
+                            <div class="col-lg-6 p-0">
+                                <div class="product-image" style="padding:  5px">
+                                    <img alt="Air Heater Ferrules" src="Images/Structural product/Air Heater Ferrules.jpg">
+                                    </img>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 p-0 item-intro">
+                                <div class="item-intro-text">
+                                    <h2>
+                                        Introduction to Customized Fabrication:
+                                    </h2>
+                                    <p>
+                                        Customized fabrication refers to the tailored manufacturing process of creating unique parts and structures to meet specific design and functional requirements. This approach is essential across various industries, ensuring that products fit precise specifications and operational needs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container p-0 main-container">
+                            <div class="section-item">
+                                <h2>Key Aspects of Customized Fabrication</h2>
+                            </div>
+                            <div class="row p-3 bg bg-light">
+                                <div class="col-lg-6 section-item">
+                                    <h2>Definition and Purpose</h2>
+                                    <p>Customized fabrication involves the design and production of components that are not mass-produced. It caters to unique applications, providing flexibility in size, shape, and material.</p>
+                                </div>
+                                <div class="col-lg-6 section-item">
+                                    <h2>Benefits</h2>
+                                    <p><strong><b>Precision: </b></strong>Ensures components meet exact specifications.</p>
+                                    <p><strong><b>Versatility: </b></strong>Accommodates a wide range of materials and design complexities.</p>
+                                    <p><strong><b>Efficiency: </b></strong>Tailored solutions can enhance operational efficiency in specific applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container p-0 main-container">
+                            <div class="row p-3 bg bg-light">
+                                <div class="section-item">
+                                    <h2>Common Fabrication Processes</h2>
+                                </div>
+                                <div class="col-lg-4 section-item">
+                                    <h2>1. Cutting</h2>
+                                    <p>Methods such as laser cutting, water jet cutting, and plasma cutting are used to achieve precise shapes and sizes.</p>
+                                </div>
+                                <div class="col-lg-4 section-item">
+                                    <h2>2. Bending</h2>
+                                    <p>Techniques like press braking and roll bending shape materials into required angles and curves.</p>
+                                </div>
+                                <div class="col-lg-4 section-item">
+                                    <h2>3. Welding</h2>
+                                    <p>Various welding methods (MIG, TIG, arc) are employed to join components, ensuring structural integrity.</p>
+                                </div>
+                                <div class="col-lg-4 section-item">
+                                    <h2>4. Machining</h2>
+                                    <p>Processes like milling, turning, and drilling create intricate designs and finishes on fabricated parts.</p>
+                                </div>
+                                <div class="col-lg-4 section-item">
+                                    <h2>5. Assembly</h2>
+                                    <p>The final step involves assembling various fabricated components into a complete product or structure</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container p-0 main-contain">
+                            <div id="item-design" class="section-item">
+                                <h2>
+                                    Design and Structure of Customized Fabrication:
+                                </h2>
+                                <p>
+                                    Customized fabrication involves creating components tailored to specific requirements using various materials and processes. This approach often employs techniques such as cutting, bending, welding, and machining to produce unique shapes and sizes. The design can incorporate features that enhance functionality, such as reinforcing structures or optimizing surface areas for better performance in their intended applications.
+                                </p>
+                            </div>
+                            <div id="item-Installation" class="section-item">
+                                <h2>
+                                    Installation of Customized Fabrication Components:
+                                </h2>
+                                <p>
+                                    Customized fabrication components are installed according to specific project requirements and design specifications. These components are carefully positioned within the assembly or structure to ensure optimal functionality. For example, they may be integrated into existing frameworks or systems to form barriers, supports, or conduits, enhancing overall performance and efficiency.
+                                </p>
+                            </div>
+                            <div class="item-Material-Selection" class="section-item">
+                                <h2>
+                                    Material Selection for Customized Fabrication Components:
+                                </h2>
+                                <p>
+                                    The selection of materials for customized fabrication components depends on factors such as operational requirements, environmental conditions, and mechanical stresses. Common materials include steel, aluminum, and various alloys, selected for their durability, corrosion resistance, and suitability for specific applications to ensure long-lasting performance.
+                                </p>
+                            </div>
+                            <div class="item-Advantages" class="section-item">
+                                <h2>
+                                    Advantages of Customized Fabrication Components:
+                                </h2>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            Tailored Solutions:
+                                        </span>
+                                        Customized fabrication allows for the creation of components that precisely meet specific design and functional requirements, enhancing overall system performance.
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Increased Durability:
+                                        </span>
+                                        By selecting appropriate materials and manufacturing processes, customized components can provide improved durability and longevity, reducing the need for frequent replacements.
+                                    </li>
+                                    <li>
+                                        <span>
+                                            Enhanced Efficiency:
+                                        </span>
+                                        Customized solutions can optimize operational efficiency, leading to reduced energy consumption and lower operational costs in various applications.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- details -->
+                    <!-- type heading -->
+                    <div id="Stainless" class="header">
+                        <p>Stainless Steel Fasteners</p>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!--Gallery Carousel -->
+                                    <div class="carousel" data-items="3" data-dots="false" data-lightbox="gallery">
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Structural product\10-inch-dinner-plate.png" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Structural product\304-stainless-steel-pipe.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Structural product\Air Heater Ferrules.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Structural product\Air Pre Heater Ferrule.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Structural product\boiler Heater Ferrules.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Structural product\e-beams.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Structural product\Fabrications.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Structural product\Hollow-Steel-Pipe.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Gallery Carousel -->
+                                    <div class="line"></div>
+                                    <div class="container p-3 mt-2">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="2" class="text-center">Note</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Usage/Application:</th>
+                                                        <td>
+                                                            Construction, Building Line, Oil & Gas Industries
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Flange Type:</th>
+                                                        <td>
+                                                            SOFF, SORF, As Per Drawing
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Type:</th>
+                                                        <td>
+                                                            Sleeves Without puddle flange, Sleeves With Two Side puddle flange
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Head Shape:</th>
+                                                        <td>
+                                                            Round
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Diameter :</th>
+                                                        <td>1/2" To 24"</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Model Name/Number:</th>
+                                                        <td>SS Puddle Flange</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Product Customization:</th>
+                                                        <td>Yes</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Material:</th>
+                                                        <td>304,304L,316,316L & 310</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="container main-container p-4">
+                                            <div class="line"></div>
+                                            <p>Manufacturing Stainless Steel Puddle Flange in India, Varcas stainless holds a wide array of Stainless Steel Puddle Flange in all Sizes and Thickness. Varcas stainless is an Stainless Steel Puddle Flange manufacturer, supplier & distributor in India</p>
+                                            <p>Stainless Steels has a good mechanical and corrosion resistance properties, and excellent fabrication characteristics, make them candidate material in oil and gas production, piping systems, medical devices, food and beverage production, structural applications and corrosion-resistant vessels.</p>
+                                            <p>Connections made with flanges help in connecting piping equipment to create an efficient pipeline system. A Stainless Steel Puddle Flanges as a waterproof construction product that is Utilized in plumbing and drainage Systems. These flanges have excellent corrosion resistance Properties and work well in harsh environments.</p>
+                                            <div class="line"></div>
+                                            <img src="images/sscf1.jpg" class="img-fluid rounded" alt="">
+                                            <img src="images/sscf2.jpg" class="img-fluid rounded" alt="">
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="container main-container p-4">
+                                            <h5><b>SS Puddle Flanges Applications</b></h5>
+                                            <ul class="list-inline">
+                                                <li>To Prevent Water or gas getting into buildings via pipe penetrations</li>
+                                                <li>Domestic and Commercial Developments</li>
+                                                <li>Installed on pipes during construction where water penetration has to be prevented</li>
+                                            </ul>
+                                        </div>
+                                        <div class="container main-container p-4">
+                                            <div class="line"></div>
+                                            <h5><b>Puddle Flanges Types</b></h5>
+                                            <ul>
+                                                <li>Stainless Steel Threaded Puddle Flange</li>
+                                                <li>Stainless Steel One Side Puddle Flange</li>
+                                                <li>Stainless Steel Two Side Puddle Flange</li>
+                                                <li>Stainless Steel puddle without flanges</li>
+                                                <li>SS Puddle Flange</li>
+                                                <li>SS 150# Puddle Flange</li>
+                                                <li>SS 304 Puddle Flange</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                    </section>
+                    <div id="Nickel" class="header">
+                        <p>Nickel Alloy</p>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="row p-4 mt-1">
+                                <div class="col-lg-12 ">
+                                    <p>
+                                        We are a prominent name in manufacturing CNC Turned & Machine Components which are the precision components. Our products are provided with customization as per the clients design specifications and requirements. These components extensively used in:
+                                    </p>
+                                    <ul>
+                                        <li>Automobile</li>
+                                        <li>Hydraulic</li>
+                                        <li>Electrical</li>
+                                        <li>Electronic industry</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="Non Ferrous" class="header">
+                        <p>Non Ferrous Metal</p>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="row">
+                                <div class="col-lg-12 p-3">
+                                    <h5 class="text-center"><b>Work in the material of copper , brass</b></h5>
+                                    <div class="row type">
+                                        <div class="col-lg-6 sub-type">
+                                            <h5>Special Brass Component</h5>
+                                            <p>We shall be pleased to develop Non-Standard Brass components nuts screws studs fixings wood screws machine screws fasteners as per specific requirements.</p>
+                                        </div>
+                                        <div class="col-lg-6 sub-type">
+                                            <h5>Material</h5>
+                                            <p>Brass to BS 2874 / 2872</p>
+                                        </div>
+                                        <div class="col-lg-6 sub-type">
+                                            <h5>Finish</h5>
+                                            <p>Brass natural, Electro-Tinned, Nickel etc.</p>
+                                        </div>
+                                        <div class="col-lg-6 sub-type">
+                                            <h5>Brass Parts Thread</h5>
+                                            <p>ISO Metric, BSW, BA, BSF, UNC, UNF UNEF etc.</p>
+                                        </div>
+                                        <div class="col-lg-6 sub-type">
+                                            <h5>Thread</h5>
+                                            <p>2mm 3mm 4mm 5mm 6mm 8mm 10mm 12mm 16mm 20mm 25mm 32mm <br>
+                                                1/8" 5/32" 3/16" 1/4" 5/16" 3/8" 1/2" 5/8" 3/4" 1" 11/8" 11/4" 11/2" 13/4" 2"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    <div id="Carbon" class="header">
+                        <p>Alloy Steel Fasteners</p>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="row mt-1">
+                                <div class="col-lg-12 p-3">
+                                    <p>
+                                        We are a prominent name in stocking CNC Turned & Machine Components which are the precision components. Our products are provided with customization as per the clients design specifications and requirements. These components extensively used in:
+                                    </p>
+                                    <ul>
+                                        <li>Automobile</li>
+                                        <li>Hydraulic</li>
+                                        <li>Electrical</li>
+                                        <li>Electronic industry</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="Carbon" class="header">
+                        <p>Carbon Steel Fasteners</p>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="row p-3">                                
+                                <div class="col-lg-12">
+                                    <ul style="list-style: disc;">
+                                        <li>Work in the material of carbon steel</li>
+                                        <li>Processes can be handled: metal fabrication, machining, welding, forming, shaping, punching, drilling, turning, milling, grinding, chip formatting, rolling</li>
+                                        <li>Metal fabrications and finished machined components</li>
+                                        <li>Equipped with CNC lathes, milling, drilling, planning and grinding machines, we can handle a variety of machining operations</li>
+                                        <li>Available in different types</li>
+                                        <li>CNC precision metal machined parts with bright polishing finish</li>
+                                        <li>Quality guideline: continuous improvement, upgrade step by step</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mt-1">
+                                    <h5><b>Puddle Flanges:</b></h5>
+                                </div>                                
+                                <div class="col-lg-12">
+                                    <p>The Puddle Flanges, offered by us, are used in concrete tanks which have openings of various sizes for inlet, outlet, overflow, venting and interconnecting. Our Puddle Flanges are made in MS and hot dip galvanized or can also made of stainless steel. We are an eminent Puddle Flanges Manufacturer & Supplier in India.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="products-section" class="header">
+                        <p>Fasteners Products</p>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="gallery-container">
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        10-inch-dinner-plate.png
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Structural product\10-inch-dinner-plate.png" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        304-stainless-steel-pipe
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Structural product\304-stainless-steel-pipe.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        E-Beams
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Structural product\e-beams.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        SS Puddle
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Structural product\SS puddle flanges.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        stainless-steel-flat
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Structural product\stainless-steel-flat.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        Hollow-Steel-Pipe
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Structural product\Hollow-Steel-Pipe.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+</body>
+<!-- Fixed Footer -->
+<footer id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="heading-footer">
+                    <h3>
+                        Varcas Stainless
+                    </h3>
+                </div>
+                <div class="contain-text">
+                    <p>
+                        Varcas Stainless is a premier manufacturer of high-quality stainless products for residential, commercial, and industrial applications. Our extensive range includes sinks, countertops, handrails, balustrades, and custom fabrications, all crafted with precision and durability in mind. With our commitment to excellence and customer satisfaction, Varcas Stainless is your trusted partner for innovative stainless solutions. Experience superior quality and craftsmanship with Varcas today.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="heading-footer">
+                    <h3>
+                        Product
+                    </h3>
+                </div>
+                <div>
+                    <ul class="footer-list">
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Pipes & Tubes
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Buttwelt Fittings
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Flanges
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Fasteners
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Bars & Wire
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Customised Fabrication
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="heading-footer">
+                    <h3>
+                        Contact
+                    </h3>
+                </div>
+                <div>
+                    <ul class="footer-list">
+                        <li class="nav-item1">
+                            <div class="lbl-name">
+                                <h5>
+                                    Name :
+                                </h5>
+                            </div>
+                            <a class="nav-link1" href="#">
+                                VINOD BOKADIA
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <div class="lbl-name">
+                                <h5>
+                                    Mobile :
+                                </h5>
+                            </div>
+                            <a class="nav-link1" href="#">
+                                +91 9619158558
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <div class="lbl-name">
+                                <h5>
+                                    Email :
+                                </h5>
+                            </div>
+                            <p>
+                                If you have any questions, please email us at.
+                                <a class="nav-link1" href="mailto:info@varcasstainless.com">
+                                    info@varcasstainless.com
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="heading-footer">
+                    <h3>
+                        Show MAP
+                    </h3>
+                </div>
+                <div class="addr">
+                    <label>
+                        Address:
+                    </label>
+                    <p>
+                        Office No D-12, 1St Floor, 331/333 Fatimabai Building, Maulana Azad Road, Goldeval, Mumbai –
+                        400004. Maharashtra, India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="color: rgb(255, 255, 255); position: relative; opacity: 1;">
+    <div class="container text-center">
+        <p>
+            © 2024 Varcas Stainless. All rights reserved | Design By
+            <a href="https://www.brandedsystem.com/">
+                Branded System
+            </a>
+        </p>
+    </div>
+    </hr>
+</footer>
+
+</html>

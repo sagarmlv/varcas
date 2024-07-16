@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link href="./css/products.css" rel="stylesheet" type="text/css">
+    <link href="./css/main-sub-product.css" rel="stylesheet" type="text/css">
+    <title>
+        Varcas Stainless
+    </title>
+    </link>
+    </link>
+    </link>
+    <script type="text/javascript" src="script.js"></script>
+    </meta>
+    </meta>
+    <meta name="description" content="Varcas Stainless Steel Factory specializes in manufacturing high-quality stainless steel products for residential, commercial, and industrial applications. Explore our wide range of durable and aesthetically pleasing stainless steel solutions.">
+    <meta name="keywords" content="varcas, stainless steel, factory, products, residential, commercial, industrial">
+</head>
+<!-- Header Section -->
+<header id="header container-fluid">
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container">
+            <div class="logo">
+                <a class="navbar-brand" href="Index.html">
+                    <img src="./Images/logo.jpg" />
+                </a>
+            </div>
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">
+                            Products
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="material.html">
+                            Material
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactUs.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <style>
+    /* Scrollbar */
+
+
+
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        overflow-y: hidden;
+        /* Hide vertical scrollbar by default */
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        /* Optional: Enables momentum scrolling in iOS Safari */
+    }
+
+    .carousel::-webkit-scrollbar {
+        height: 7px;
+    }
+
+    .carousel::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        /* Track color */
+        border-radius: 7px;
+        /* Rounded corners */
+    }
+
+    .carousel::-webkit-scrollbar-thumb {
+        background: #c5c5c5;
+        /* Thumb color */
+        border-radius: 10px;
+        /* Rounded corners */
+    }
+
+    .carousel::-webkit-scrollbar-thumb:hover {
+        background: #d5d5d5;
+        /* Hovered thumb color */
+    }
+
+
+
+    /* type heading */
+
+    .header {
+        background-color: #2185a0;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        align-items: baseline;
+        height: 100px;
+        border-bottom: 5px solid rgb(72, 235, 211);
+        ;
+        border-top: 5px solid rgb(72, 235, 211);
+
+    }
+
+    .header p {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .header p {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .header p {
+            font-size: 18px;
+        }
+    }
+
+    /* Silder */
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        /* Optional: Enables momentum scrolling in iOS Safari */
+    }
+
+    .portfolio-item {
+        flex: 0 0 auto;
+        margin-right: 10px;
+        /* Adjust as needed */
+        scroll-snap-align: start;
+        margin: 10px;
+    }
+
+    .portfolio-item-wrap {
+        width: 300px;
+        /* Adjust the width as needed */
+        height: 300px;
+        /* Adjust the height as needed */
+        overflow: hidden;
+        border: 1px solid #ccc;
+        /* Border style */
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    .portfolio-image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .portfolio-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Maintain aspect ratio and cover the container */
+        border-radius: 10px;
+        /* Rounded corners for the image */
+    }
+
+
+
+
+    /* Details */
+
+
+    /* products */
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+
+
+    @media (max-width: 500px) {
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 400px) {
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+    @media (max-width: 290px) {
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+
+    .gallery-box {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+        /* Ensure image doesn't exceed box boundaries */
+    }
+
+    .gallery-header {
+        background-color: #2185a0;
+        color: white;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .gallery-image {
+        padding: 10px;
+    }
+
+    .gallery-image img {
+        max-width: 100%;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+
+
+
+    /* Dropdown */
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #2185a0;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        width: 200px;
+        border-radius: 7px;
+
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 10px;
+        text-decoration: none;
+        display: block;
+        border-radius: 7px;
+        color: white;
+    }
+
+    .dropdown-content a:hover {
+        background-color: white;
+        color: #2185a0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    </style>
+    <script>
+    //  Dropdown 
+
+
+    // JavaScript for hover effect (optional)
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    dropdown.addEventListener('mouseenter', function() {
+        dropdownContent.style.display = 'block';
+    });
+
+    dropdown.addEventListener('mouseleave', function() {
+        dropdownContent.style.display = 'none';
+    });
+
+    // dropdown scroll 
+
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    </script>
+    <!-- products header -->
+    <section id="products">
+        <div class="container-fluid p-0 m-0 product-section1">
+            <div class="row p-0 m-0">
+                <div class="col-lg-12 p-0 m-0 product-item-details">
+                    <div class="row cateory">
+                        <div class="row category">
+                            <ul>
+                                <li>
+                                    <button class="btn-nav" data-category="all" onclick="showCategory('all')">
+                                        All
+                                    </button>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="Butt-weld-pro" onclick="window.location.href='Fittings2.html'">
+                                        Fittings
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="Flanges-pro" onclick="window.location.href='Flanges2.html'">
+                                        Flanges
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="Fasteners-pro" onclick="window.location.href='Fasteners2.html'">
+                                        Fasteners
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="pipe-tube-pro" onclick="window.location.href='Pipes&Tubes2.html'">
+                                        Pipes & Tubes
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="Bar&wires-pro" onclick="window.location.href='Bars&Wires2.html'">
+                                        Bars & Wires
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="btn-nav" data-category="Customised-Fabrication" onclick="window.location.href='CustomizedFabrication2.html'">
+                                        Customised Fabrication
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="#Stainless" onclick="scrollToSection('Stainless')">Stainless Steel</a>
+                                        <a href="#Nickel" onclick="scrollToSection('Nickel')">Nickel Alloy</a>
+                                        <a href="#Non Ferrous" onclick="scrollToSection('Non Ferrous')">Non Ferrous Metal</a>
+                                        <a href="#Alloy" onclick="scrollToSection('Alloy')">Alloy Steel</a>
+                                        <a href="#Carbon" onclick="scrollToSection('Carbon')">Carbon Steel</a>
+                                        <a href="#products-section" onclick="scrollToSection('products-section')">Products</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- products header -->
+                    <div style="border-top: 5px solid white;"></div>
+                    <div class="container-fluid p-0 m-0 custom-heading">
+                        <div class="container p-0">
+                            <div class="custom-heading-content">
+                                <h1>
+                                    Flanges: A Comprehensive Overview
+                                </h1>
+                                <p>
+                                    Welcome to our comprehensive overview of flanges used in piping systems. Below, you will find detailed information about various types of flanges and their applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container">
+                            <div class="container intro-container">
+                                <div class="row">
+                                    <div class="col-lg-6 p-0">
+                                        <div class="product-image">
+                                            <img alt="Bleed Ring Flanges" src="./Images/Flanges/Bleed Ring Flange.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 p-0 item-intro">
+                                        <div class="item-intro-text">
+                                            <h2>
+                                                Introduction Flanges:
+                                            </h2>
+                                            <p>
+                                                Flanges are critical components in piping systems, offering a secure method for connecting pipes, valves, pumps, and other equipment. Available in various types and materials, each flange is designed to meet specific application requirements and operating conditions. This overview will explore the different types of flanges, their applications, materials, and installation techniques.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container main-container">
+                                <div class="section-item">
+                                    <h2>Design and Structure of Flanges</h2>
+                                    <p>
+                                        Flanges are designed with specific features to ensure secure connections in piping systems. Typically, they consist of a flat, raised, or recessed face that allows for a tight seal when joined with corresponding flanges. Many flanges include bolt holes around the perimeter for easy assembly, and their structural design varies based on the application requirements, including pressure ratings and material compatibility.
+                                    </p>
+                                </div>
+                                <div class="section-item-type">
+                                    <h2>Types of Flanges:</h2>
+                                    <div class="row type">
+                                        <div class="col-lg-6 sub-type">
+                                            <h3>Weld Neck Flanges</h3>
+                                            <p>Designed with a long tapered hub, providing strength and support for high-stress applications. Ideal for high-pressure systems.</p>
+                                        </div>
+                                        <div class="col-lg-6 sub-type">
+                                            <h3>Slip-On Flanges</h3>
+                                            <p>Slip over the pipe and are welded in place. Easy to install and suitable for low-pressure applications.</p>
+                                        </div>
+                                        <div class="col-lg-6 sub-type">
+                                            <h3>Socket Weld Flanges</h3>
+                                            <p>Feature a socket for inserting the pipe, then welded around the hub. Commonly used in high-pressure, small-diameter applications.</p>
+                                        </div>
+                                        <div class="col-lg-6 sub-type">
+                                            <h3>Blind Flanges</h3>
+                                            <p>Used to close the ends of piping systems, preventing flow and allowing for pressure testing.</p>
+                                        </div>
+                                        <div class="col-lg-6 sub-type">
+                                            <h3>Lap Joint Flanges</h3>
+                                            <p>Designed to be used with stub ends, allowing for easy disassembly and inspection of piping systems.</p>
+                                        </div>
+                                        <div class="col-lg-6 sub-type">
+                                            <h3>Threaded Flanges</h3>
+                                            <p>Have internal threads to screw onto the pipe, eliminating the need for welding. Suitable for high-pressure, low-temperature applications.</p>
+                                        </div>
+                                        <div class="col-lg-6 sub-type">
+                                            <h3>Orifice Flanges</h3>
+                                            <p>Specifically designed for flow measurement, incorporating orifice meters to measure fluid flow rates.</p>
+                                        </div>
+                                        <div class="col-lg-6 sub-type">
+                                            <h3>Raised Face Flanges</h3>
+                                            <p>Feature a raised area around the bolt circle to enhance sealing and strength, commonly used in high-pressure applications.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-item">
+                                    <h2>Installation of Flanges:</h2>
+                                    <p>
+                                        Installing flanges involves securely bolting them between two standard flanges in a piping system using suitable gaskets and fasteners. It's essential to position the ports according to the system's specific requirements, ensuring easy access for maintenance and operation.
+                                    </p>
+                                </div>
+                                <div class="section-item">
+                                    <h2>Pressure Ratings and Applications:</h2>
+                                    <p>
+                                        Flanges are designed to accommodate a wide range of pressure ratings, making them suitable for various industries and applications. They are commonly utilized in systems that require pressure relief, sampling, draining, or venting, such as in oil and gas, petrochemical, and power generation sectors.
+                                    </p>
+                                </div>
+                                <div class="section-item">
+                                    <h2>Material Selection for Flanges:</h2>
+                                    <p>
+                                        Flanges are manufactured from a variety of materials to ensure compatibility with different fluids and operating conditions. Common materials include carbon steel, stainless steel, alloy steel, and other corrosion-resistant alloys, chosen based on factors such as temperature, pressure, and fluid composition.
+                                    </p>
+                                </div>
+                                <div id="item-Testing" class="section-item">
+                                    <h2>Testing and Quality Assurance:</h2>
+                                    <p>
+                                        Flanges undergo rigorous testing and quality assurance processes to ensure their performance and integrity. This includes dimensional checks, pressure testing, non-destructive testing (NDT), and material analysis. Compliance with industry standards and specifications is critical to meet safety and reliability requirements.
+                                    </p>
+                                </div>
+                                <div id="item-Use-Case" class="section-item">
+                                    <h2>Applications and Use Cases of Flanges:</h2>
+                                    <p>
+                                        Flanges are widely used in piping systems for various applications, including pressure relief, fluid sampling, draining, and venting. They are essential in industries such as oil and gas, chemical processing, refineries, power generation, and water treatment facilities.
+                                    </p>
+                                </div>
+                                <div id="item-Advantages" class="section-item">
+                                    <h2>Advantages of Flanges:</h2>
+                                    <ul>
+                                        <li>
+                                            <span>Pressure Relief:</span>
+                                            Flanges provide a reliable method for relieving excess pressure in piping systems, preventing overpressure situations and potential equipment damage.
+                                        </li>
+                                        <li>
+                                            <span>Fluid Sampling:</span>
+                                            They facilitate the extraction of fluid samples for analysis or quality control without disrupting normal operations.
+                                        </li>
+                                        <li>
+                                            <span>Versatility:</span>
+                                            Their adaptable design and configurable options make them suitable for a wide range of applications and system requirements.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- details -->
+                    <!-- details -->
+                    <!-- type heading -->
+                    <div id="Stainless" class="header">
+                        <p>STAINLESS STEEL Flanges</p>
+                    </div>
+                    <!-- type heading -->
+                    <!-- end: Page title -->
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!--Gallery Carousel -->
+                                    <div class="carousel" data-items="3" data-dots="false" data-lightbox="gallery">
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Flanges\Bleed Ring Flange.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Flanges\Blind Flange.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Flanges\expander-flange.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Flanges\Ring Spacers Flange.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Flanges\Flange Adapter.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Flanges\Flange Olet.png" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Flanges\flat-face-flangee.jpg" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-item">
+                                            <div class="portfolio-item-wrap">
+                                                <div class="portfolio-image">
+                                                    <a href="#"><img src="Images\Flanges\Forged Flange.gif" alt="JS" class="img-fluid rounded"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Gallery Carousel -->
+                                    <div class="line"></div>
+                                    <div class="container p-3 mt-2">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead class="text-center">
+                                                    <tr>
+                                                        <th>Sr. No.</th>
+                                                        <th>Material</th>
+                                                        <th>Size</th>
+                                                        <th>Class</th>
+                                                        <th>Specification</th>
+                                                        <th>Item</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1.</td>
+                                                        <td>Forged Flange</td>
+                                                        <td>15 NB
+                                                            To
+                                                            750 NB</td>
+                                                        <td>150, 300, 600, 900
+                                                            & 1500 LBS</td>
+                                                        <td rowspan="2">
+                                                            <ul>
+                                                                <li>ASTM A 182 F304</li>
+                                                                <li>ASTM A 240 304</li>
+                                                                <li>ASTM A 182 F304L</li>
+                                                                <li>ASTM A 240 304L</li>
+                                                                <li>ASTM A 182 F304N</li>
+                                                                <li>ASTM A 240 304N</li>
+                                                                <li>ASTM A 182 F316</li>
+                                                                <li>ASTM A 240 316</li>
+                                                                <li>ASTM A 182 F316Ti</li>
+                                                                <li>ASTM A 240 316Ti</li>
+                                                                <li>ASTM A 182 F316L</li>
+                                                                <li>ASTM A 240 316L</li>
+                                                                <li>ASTM A 182 F316H</li>
+                                                                <li>ASTM A 240 316H</li>
+                                                                <li>ASTM A 182 F321</li>
+                                                                <li>ASTM A 240 321</li>
+                                                                <li>ASTM A 182 F310</li>
+                                                                <li>ASTM A 240 310</li>
+                                                                <li>ASTM A 182 F317L</li>
+                                                                <li>ASTM A 240 317L</li>
+                                                                <li>ASTM A 182 F347H</li>
+                                                                <li>ASTM A 240 347H</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>Flanges<br>SORF<br>WNRF<br>BLRF<br>SWRF<br>LAP Joint<br>Threaded<br>Reducing</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2.</td>
+                                                        <td>Plate Flange</td>
+                                                        <td>15 NB
+                                                            To
+                                                            500 NB</td>
+                                                        <td>ASA 150, 300<br>
+                                                            Table D, E, F, H, DIN, ND-6, 10, 16, 25, 40</td>
+                                                        <td>SORF, BLRF, LAP Joint
+                                                            & Spectacle</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="container p-3 mt-2">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="3" class="text-center">Note</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th rowspan="2">Stainless Steel in Grade:</th>
+                                                        <td>ASTM A 403 WP</td>
+                                                        <td>304, 304L, 304H, 316, 316L, 316LN, 316Ti, 309, 310S, 317L, 321, 347, 410, 420, 446, 202 Etc.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ASTM A 182 F</td>
+                                                        <td>304, 304L, 304H, 316, 316L, 316LN, 316Ti, 309, 310S, 317L, 321, 347, 410, 420, 440C, 202 Etc.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">Alloy Steel:</th>
+                                                        <td>
+                                                            <ul>
+                                                                <li>ASTM A 182 F1</li>
+                                                                <li>ASTM A 182 F5</li>
+                                                                <li>ASTM A 182 F9</li>
+                                                                <li>ASTM A 182 F11</li>
+                                                                <li>ASTM A 182 F12</li>
+                                                                <li>ASTM A 182 F22</li>
+                                                                <li>ASTM A 182 F51</li>
+                                                                <li>ASTM A 182 F53</li>
+                                                                <li>ASTM A 182 F55</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">Nickel Alloys:</th>
+                                                        <td>
+                                                            <ul>
+                                                                <li>ASTM B 160</li>
+                                                                <li>ASTM B 472</li>
+                                                                <li>ASTM B 560</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">Grades:</th>
+                                                        <td>
+                                                            <ul>
+                                                                <li>UNS 2200 (NICKEL 200)</li>
+                                                                <li>UNS 2201 (NICKEL 201)</li>
+                                                                <li>UNS 4400 (MONEL 400)</li>
+                                                                <li>UNS 8825 INCONEL (825)</li>
+                                                                <li>UNS 6600 (INCONEL 600)</li>
+                                                                <li>UNS 6601 (INCONEL 601)</li>
+                                                                <li>UNS 6625 (INCONEL 625)</li>
+                                                                <li>UNS 10276 (HASTELLOY C 276)</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">Carbon Steel:</th>
+                                                        <td>
+                                                            <ul>
+                                                                <li>ASTM A105</li>
+                                                                <li>ASTM A105N</li>
+                                                                <li>ASTM A694 F42</li>
+                                                                <li>ASTM A694 F46</li>
+                                                                <li>ASTM A694 F52</li>
+                                                                <li>ASTM A694 F56</li>
+                                                                <li>ASTM A694 F60</li>
+                                                                <li>ASTM A694 F65</li>
+                                                                <li>ASTM A694 F70</li>
+                                                                <li>ASTM A350 LF3</li>
+                                                                <li>ASTM A350 LF2</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">Other Forms:</th>
+                                                        <td>Compression Fitting / Instrumentation / Hydraulic Fitting /
+                                                            Dairy Fitting & Also As Per Drawing</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">Test Certificate:</th>
+                                                        <td>Manufacturer Test Certificate as per EN 10204 / 3.1, Raw Materials Certificate, Third Party Inspection Report.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">Specialize:</th>
+                                                        <td>Long Bend with Radius - R = 3D, 5D &
+                                                            10D Pigabble Bend & As per your drawing</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="container p-3 mt-2">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <h5>Flange Dimension Standards & Pressure Grade</h5>
+                                                <ul>
+                                                    <li><strong>ASA/ANSI (USA)</strong> ANSI 125# TO 2500#</li>
+                                                    <li><strong>PN/DIN (European)</strong> DIN2527, DIN2566, DIN2573, DIN2576, DIN2641, DIN2642, DIN2655, DIN2656, DIN2627, DIN2628, DIN2629, DIN 2631, DIN2632, DIN2633, DIN2634, DIN2635, DIN2636, DIN2637, DIN2638, DIN2673</li>
+                                                    <li><strong>Pressure Class:</strong> PN 6 TO PN 320</li>
+                                                    <li><strong>BS/AS (British/Australian)</strong><br>
+                                                        (<strong>BS10:</strong> Table D,Table E,Table F,Table G,Table H, Table J Table K,)<br>
+                                                        (<strong>BS4504:</strong> PN6, PN10, PN16, PN25, PN40, PN64, PN100.)<br>
+                                                        (<strong>AS2129</strong> Table C,Table D,Table E,Table F,Table G,Table H, Table J)
+                                                    </li>
+                                                    <li><strong>JIS/KIS (Japanese/Korean) JIS B 2220:</strong> 5K,10K -JIS 2220:10K,16K,20K,30K</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Type Designation:</h5>
+                                                <ul>
+                                                    <li>Slip On Flanges</li>
+                                                    <li>Slip On Orifice Flanges</li>
+                                                    <li>Blind Flanges</li>
+                                                    <li>Weld Neck Flanges</li>
+                                                    <li>Weld Neck Orifice Flanges</li>
+                                                    <li>Long Weld Neck Flanges</li>
+                                                    <li>Heavy Barrel Long Weld Neck Flanges</li>
+                                                    <li>Lap Joint Flanges</li>
+                                                    <li>Socket Weld Flanges</li>
+                                                    <li>Threaded Flanges</li>
+                                                    <li>Threaded Orifice Flanges</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Facing:</h5>
+                                                <ul>
+                                                    <li>Flat face : “FF” (It is only used for 150 (psi) rating pipe class.)</li>
+                                                    <li>Raised face: “RF” (It is specified up to 600 (psi) rating pipe class.)</li>
+                                                    <li>Tongue and groove: (Its use is mainly dependent upon the nature of fluid to be handled.)</li>
+                                                    <li>Ring joint: “RTJ” (It is specified from 900 rating (psi) & above pipe class.)</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Pipe Standard, (SCOPE)</h5>
+                                                <ul>
+                                                    <li>ASME B 16.5 (1/2”NPS ~24”NPS) (DN-15 ~ DN-500)</li>
+                                                    <li>ASME B 16.47 (26”NPS ~60”NPS) (DN-650 ~ DN-1500)</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <ul>
+                                                    <li>Stainless Steel Slip On Flanges</li>
+                                                    <li>Stainless Steel 304 Flanges</li>
+                                                    <li>Stainless Steel 304L Flanges</li>
+                                                    <li>Stainless Steel 310 Flanges</li>
+                                                    <li>Stainless Steel 321 Flanges</li>
+                                                    <li>Stainless Steel 304 SORF Flanges</li>
+                                                    <li>Stainless Steel 304 Blind Flanges</li>
+                                                    <li>Stainless Steel 304L Blind Flanges</li>
+                                                    <li>Stainless Steel 304 BLRF Flanges</li>
+                                                    <li>Stainless Steel 316 BLRF Flanges</li>
+                                                    <li>Stainless Steel 316 Slip on Flanges</li>
+                                                    <li>Stainless Steel 316L SORF Flanges</li>
+                                                    <li>Stainless Steel 304 WNRF Flanges</li>
+                                                    <li>Stainless Steel 304L WNRF Flanges</li>
+                                                    <li>Stainless Steel 316 WNRF Flanges</li>
+                                                    <li>Stainless Steel 316L WNRF Flanges</li>
+                                                    <li>Stainless Steel 310 WNRF Flanges</li>
+                                                    <li>Stainless steel 304 Slip On Orifice Flanges</li>
+                                                    <li>Stainless steel 304L Slip On Orifice Flanges</li>
+                                                    <li>Stainless steel 316 Slip On Orifice Flanges</li>
+                                                    <li>Stainless steel 316L Slip On Orifice Flanges</li>
+                                                    <li>Stainless steel 316L Blind Flanges</li>
+                                                    <li>Stainless steel 310 Weld Neck Flanges</li>
+                                                    <li>Stainless steel 304 Long Weld Neck Flanges</li>
+                                                    <li>Stainless steel 316 Long Weld Neck Flanges</li>
+                                                    <li>Stainless steel Heavy Barrel Long Weld Neck Flanges</li>
+                                                    <li>Stainless steel 304 RTJ Flanges</li>
+                                                    <li>Stainless steel Weld Neck Orifice Flanges</li>
+                                                    <li>Stainless steel 304 Weld Neck Orifice Flanges</li>
+                                                    <li>Stainless steel 304L Weld Neck Orifice Flanges</li>
+                                                    <li>Stainless steel 316 Weld Neck Orifice Flanges</li>
+                                                    <li>Stainless steel 316L Weld Neck Orifice Flanges</li>
+                                                    <li>Stainless steel 304 Lap Joint Flanges</li>
+                                                    <li>Stainless steel 304 Socket Weld Flanges</li>
+                                                    <li>Stainless steel 304 Threaded Flanges</li>
+                                                    <li>Stainless steel 304L Threaded Flanges</li>
+                                                    <li>Stainless steel 316 Threaded Flanges</li>
+                                                    <li>Stainless steel 316L Threaded Flanges</li>
+                                                    <li>Stainless steel 310 Threaded Flanges</li>
+                                                    <li>Stainless steel Threaded Orifice Flanges</li>
+                                                    <li>Stainless steel AWWA Standard Steel-ring Flanges Class B</li>
+                                                    <li>Stainless steel AWWA Standard Steel-ring Flanges Class C</li>
+                                                    <li>Stainless steel AWWA Standard Steel-hub Flanges Class D</li>
+                                                    <li>Stainless steel AWWA Standard Steel-hub Flanges Class E</li>
+                                                    <li>Stainless steel Plate Flanges.</li>
+                                                    <li>SS 304 SORF Flanges</li>
+                                                    <li>SS 304L SORF Flanges</li>
+                                                    <li>SS 316 SWRF Flanges</li>
+                                                    <li>SS 304 BLRF Flanges</li>
+                                                    <li>SS 316 BLRF Flanges</li>
+                                                    <li>SS 304L SOFF Flanges</li>
+                                                    <li>SS 316L SOFF Flanges</li>
+                                                    <li>SS 304 WNRF Flanges</li>
+                                                    <li>SS 304L WNRF Flanges</li>
+                                                    <li>SS 316 WNRF Flanges</li>
+                                                    <li>SS 316L WNRF Flanges</li>
+                                                    <li>SS 304 Table D Flanges</li>
+                                                    <li>SS 304 Table F Flanges</li>
+                                                    <li>SS 316 Table D Flanges</li>
+                                                    <li>SS 316 Table F Flanges</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="Nickel" class="header">
+                        <p>Nickel Alloy Flanges</p>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="line"></div>
+                                    <div class="container p-3 mt-2">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead class="text-center">
+                                                    <tr>
+                                                        <th>Sr. No.</th>
+                                                        <th>Material</th>
+                                                        <th>Size</th>
+                                                        <th>Class</th>
+                                                        <th>Specification</th>
+                                                        <th>Item</th>
+                                                        <th>Grade</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td rowspan="2">1.</td>
+                                                        <td rowspan="2">
+                                                            Cupro Nickel<br>
+                                                            Hastelloy<br>
+                                                            Nickel<br>
+                                                            Monel<br>
+                                                            Inconel<br>
+                                                            Alloy 20<br>
+                                                            Duplex
+                                                        </td>
+                                                        <td rowspan="2">15 NB
+                                                            To
+                                                            200 NB</td>
+                                                        <td>150#<br>300#</td>
+                                                        <td rowspan="2">
+                                                            <ul>
+                                                                <li>ASTM B 160</li>
+                                                                <li>ASTM B 472</li>
+                                                                <li>ASTM B 560</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            SORF<br>WNRF<br>BLRF<br>SWRF<br>LAP Joint<br>Threaded<br>Reducing
+                                                        </td>
+                                                        <td rowspan="2">
+                                                            <ul>
+                                                                <li>UNS 2200 (NICKEL 200),</li>
+                                                                <li>UNS 2201 (NICKEL 201)</li>
+                                                                <li>UNS 4400 (MONEL 400)</li>
+                                                                <li>UNS 8825 INCONEL (825)</li>
+                                                                <li>UNS 6600 (INCONEL 600)</li>
+                                                                <li>UNS 6601 (INCONEL 601)</li>
+                                                                <li>UNS 6625 (INCONEL 625)</li>
+                                                                <li>UNS 10276 (HASTELLOY C 276)</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            ASA 150, 300<br>
+                                                            Table D, E, F, H<br>DIN, ND-6, 10, 16, 25, 40
+                                                        </td>
+                                                        <td>SORF<br>BLRF<br>LAP Joint Etc.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="container p-3 mt-2">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="2" class="text-center">Note</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Grade:</th>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Cupro Nickel (90/10, 70/30, 66/30/2/2)</li>
+                                                                <li>Hastelloy (C-4, C-22, C276, B-2)</li>
+                                                                <li>Nickel (200 / 201 / 205)</li>
+                                                                <li>Monel (400 & K500)</li>
+                                                                <li>Inconel (600, 601, 625 & 825)</li>
+                                                                <li>Incolloy (800, 800H)</li>
+                                                                <li>Alloy 20</li>
+                                                                <li>Duplex Steel</li>
+                                                                <li>SS 904L</li>
+                                                                <li>Titanium (1 & 2) Etc.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Test Certificate:</th>
+                                                        <td>Manufacturer Test Certificate as per EN 10204 / 3.1, Raw Materials Certificate, Third Party Inspection Report.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="container p-3 mt-2">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <h5>Flange Dimension Standards & Pressure Grade</h5>
+                                                <ul>
+                                                    <li><strong>ASA/ANSI (USA)</strong> ANSI 125# TO 2500#</li>
+                                                    <li><strong>PN/DIN (European)</strong> DIN2527, DIN2566, DIN2573, DIN2576, DIN2641, DIN2642, DIN2655, DIN2656, DIN2627, DIN2628, DIN2629, DIN 2631, DIN2632, DIN2633, DIN2634, DIN2635, DIN2636, DIN2637, DIN2638, DIN2673</li>
+                                                    <li><strong>Pressure Class:</strong> PN 6 TO PN 320</li>
+                                                    <li><strong>BS/AS (British/Australian)</strong><br>
+                                                        (<strong>BS10:</strong> Table D,Table E,Table F,Table G,Table H, Table J Table K,)<br>
+                                                        (<strong>BS4504:</strong> PN6, PN10, PN16, PN25, PN40, PN64, PN100.)<br>
+                                                        (<strong>AS2129</strong> Table C,Table D,Table E,Table F,Table G,Table H, Table J)
+                                                    </li>
+                                                    <li><strong>JIS/KIS (Japanese/Korean) JIS B 2220:</strong> 5K,10K -JIS 2220:10K,16K,20K,30K</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Type Designation:</h5>
+                                                <ul>
+                                                    <li>Slip On Flanges</li>
+                                                    <li>Slip On Orifice Flanges</li>
+                                                    <li>Blind Flanges</li>
+                                                    <li>Weld Neck Flanges</li>
+                                                    <li>Weld Neck Orifice Flanges</li>
+                                                    <li>Long Weld Neck Flanges</li>
+                                                    <li>Heavy Barrel Long Weld Neck Flanges</li>
+                                                    <li>Lap Joint Flanges</li>
+                                                    <li>Socket Weld Flanges</li>
+                                                    <li>Threaded Flanges</li>
+                                                    <li>Threaded Orifice Flanges</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Facing:</h5>
+                                                <ul>
+                                                    <li>Flat face : “FF” (It is only used for 150 (psi) rating pipe class.)</li>
+                                                    <li>Raised face: “RF” (It is specified up to 600 (psi) rating pipe class.)</li>
+                                                    <li>Tongue and groove: (Its use is mainly dependent upon the nature of fluid to be handled.)</li>
+                                                    <li>Ring joint: “RTJ” (It is specified from 900 rating (psi) & above pipe class.)</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Pipe Standard, (SCOPE)</h5>
+                                                <ul>
+                                                    <li>ASME B 16.5 (1/2”NPS ~24”NPS) (DN-15 ~ DN-500)</li>
+                                                    <li>ASME B 16.47 (26”NPS ~60”NPS) (DN-650 ~ DN-1500)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="Non Ferrous" class="header">
+                        <p>Non Ferrous Metal Flanges</p>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="line"></div>
+                                    <div class="container p-3 mt-2">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead class="text-center">
+                                                    <tr>
+                                                        <th>Sr. No.</th>
+                                                        <th>Material</th>
+                                                        <th>Size</th>
+                                                        <th>Class</th>
+                                                        <th>Specification</th>
+                                                        <th>Item</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td rowspan="2">1.</td>
+                                                        <td rowspan="2">
+                                                            Copper<br>
+                                                            Brass<br>
+                                                            Aluminium<br>
+                                                            Phosphorus Bronze<br>
+                                                            Gun Metal<br>
+                                                            Lead
+                                                        </td>
+                                                        <td rowspan="2">½” to 8”</td>
+                                                        <td>
+                                                            150#<br>
+                                                            300#
+                                                        </td>
+                                                        <td rowspan="2">
+                                                            IS<br>
+                                                            BS<br>
+                                                            ASTM
+                                                        </td>
+                                                        <td>
+                                                            SORF<br>WNRF<br>BLRF<br>SWRF<br>LAP Joint<br>Threaded<br>Reducing Etc.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            ASA 150, 300<br>
+                                                            Table D, E, F, H<br>DIN, ND-6, 10, 16, 25, 40
+                                                        </td>
+                                                        <td>SORF<br>BLRF<br>LAP Joint Etc.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2" class="text-center">Note</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Other Service:</th>
+                                                    <td>
+                                                        Casting, Forging, Machining Etc.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Test Certificate:</th>
+                                                    <td>Manufacturer Test Certificate as per EN 10204 / 3.1, Raw Materials Certificate, Third Party Inspection Report.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Specialize:</th>
+                                                    <td>As per Drawing</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="line"></div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h5>Flange Dimension Standards & Pressure Grade</h5>
+                                            <ul>
+                                                <li><strong>ASA/ANSI (USA)</strong> ANSI 125# TO 2500#</li>
+                                                <li><strong>PN/DIN (European)</strong> DIN2527, DIN2566, DIN2573, DIN2576, DIN2641, DIN2642, DIN2655, DIN2656, DIN2627, DIN2628, DIN2629, DIN 2631, DIN2632, DIN2633, DIN2634, DIN2635, DIN2636, DIN2637, DIN2638, DIN2673</li>
+                                                <li><strong>Pressure Class:</strong> PN 6 TO PN 320</li>
+                                                <li><strong>BS/AS (British/Australian)</strong><br>
+                                                    (<strong>BS10:</strong> Table D,Table E,Table F,Table G,Table H, Table J Table K,)<br>
+                                                    (<strong>BS4504:</strong> PN6, PN10, PN16, PN25, PN40, PN64, PN100.)<br>
+                                                    (<strong>AS2129</strong> Table C,Table D,Table E,Table F,Table G,Table H, Table J)
+                                                </li>
+                                                <li><strong>JIS/KIS (Japanese/Korean) JIS B 2220:</strong> 5K,10K -JIS 2220:10K,16K,20K,30K</li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5>Flange Type Designation:</h5>
+                                            <ul>
+                                                <li>Slip On Flanges</li>
+                                                <li>Slip On Orifice Flanges</li>
+                                                <li>Blind Flanges</li>
+                                                <li>Weld Neck Flanges</li>
+                                                <li>Weld Neck Orifice Flanges</li>
+                                                <li>Long Weld Neck Flanges</li>
+                                                <li>Heavy Barrel Long Weld Neck Flanges</li>
+                                                <li>Lap Joint Flanges</li>
+                                                <li>Socket Weld Flanges</li>
+                                                <li>Threaded Flanges</li>
+                                                <li>Threaded Orifice Flanges</li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5>Flange Facing:</h5>
+                                            <ul>
+                                                <li>Flat face : “FF” (It is only used for 150 (psi) rating pipe class.)</li>
+                                                <li>Raised face: “RF” (It is specified up to 600 (psi) rating pipe class.)</li>
+                                                <li>Tongue and groove: (Its use is mainly dependent upon the nature of fluid to be handled.)</li>
+                                                <li>Ring joint: “RTJ” (It is specified from 900 rating (psi) & above pipe class.)</li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5>Flange Pipe Standard, (SCOPE)</h5>
+                                            <ul>
+                                                <li>ASME B 16.5 (1/2”NPS ~24”NPS) (DN-15 ~ DN-500)</li>
+                                                <li>ASME B 16.47 (26”NPS ~60”NPS) (DN-650 ~ DN-1500)</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="Alloy" class="header">
+                        <p>Alloy Steel Flanges</p>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="line"></div>
+                                    <div class="container p-3 mt-2">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead class="text-center">
+                                                    <tr>
+                                                        <th>Sr. No.</th>
+                                                        <th>Material</th>
+                                                        <th>Size</th>
+                                                        <th>Class</th>
+                                                        <th>Specification</th>
+                                                        <th>Item</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1.</td>
+                                                        <td>Forged Flanges
+                                                        </td>
+                                                        <td>15 NB
+                                                            To 750 NB</td>
+                                                        <td>
+                                                            150, 300, 600,<br>
+                                                            900 & 1500 LBS
+                                                        </td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>ASTM A 182 F1</li>
+                                                                <li>ASTM A 182 F5</li>
+                                                                <li>ASTM A 182 F9</li>
+                                                                <li>ASTM A 182 F11</li>
+                                                                <li>ASTM A 182 F12</li>
+                                                                <li>ASTM A 182 F22</li>
+                                                                <li>ASTM A 182 F51</li>
+                                                                <li>ASTM A 182 F53</li>
+                                                                <li>ASTM A 182 F55</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            Flanges<br>SORF<br>WNRF<br>BLRF<br>SWRF<br>LAP Joint<br>Threaded<br>Reducing
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2.</td>
+                                                        <td>Plate Flanges</td>
+                                                        <td>15 NB
+                                                            To 500 NB</td>
+                                                        <td>ASA 150, 300<br>
+                                                            Table D, E, F, H<br>DIN, ND-6, 10, 16, 25, 40</td>
+                                                        <td>SA-387<br>
+                                                            ANSI B16.5</td>
+                                                        <td>SORF<br>BLRF<br>LAP Joint & Spectacle</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="container p-3 mt-2">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="3" class="text-center">Note</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th rowspan="2">Other Service:</th>
+                                                        <th>ASTM A 234 WP</th>
+                                                        <td>
+                                                            P5, P9, P11, P12, P21, P22 & P91.
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>ASTM A 182</th>
+                                                        <td>F5, F9, F11, F12, F21, F22 & F91.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">Test Certificate:</th>
+                                                        <td>Manufacturer Test Certificate as per EN 10204 / 3.1, Raw Materials Certificate, Third Party Inspection Report.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2">Specialize:</th>
+                                                        <td>IBR Fittings</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="2"></th>
+                                                        <td>Supplier Alloy Steel (SS) Forged Pipe Flanges Plate Buttweld in Size 15 NB To 300 NB Stockist & Suppliers, Manufacturers, Exporters Mumbai India, 304, 304L, 304H, 316, 316L, 316LN, 316Ti, 309, 310S, 317L, 321, 347, 410, 420, 446, 202, Flanges, SORF, WNRF, BLRF, SWRF, LAP Joint, Threaded, Reducing</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="container p-3 mt-2">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <h5>Flange Dimension Standards & Pressure Grade</h5>
+                                                <ul>
+                                                    <li><strong>ASA/ANSI (USA)</strong> ANSI 125# TO 2500#</li>
+                                                    <li><strong>PN/DIN (European)</strong> DIN2527, DIN2566, DIN2573, DIN2576, DIN2641, DIN2642, DIN2655, DIN2656, DIN2627, DIN2628, DIN2629, DIN 2631, DIN2632, DIN2633, DIN2634, DIN2635, DIN2636, DIN2637, DIN2638, DIN2673</li>
+                                                    <li><strong>Pressure Class:</strong> PN 6 TO PN 320</li>
+                                                    <li><strong>BS/AS (British/Australian)</strong><br>
+                                                        (<strong>BS10:</strong> Table D,Table E,Table F,Table G,Table H, Table J Table K,)<br>
+                                                        (<strong>BS4504:</strong> PN6, PN10, PN16, PN25, PN40, PN64, PN100.)<br>
+                                                        (<strong>AS2129</strong> Table C,Table D,Table E,Table F,Table G,Table H, Table J)
+                                                    </li>
+                                                    <li><strong>JIS/KIS (Japanese/Korean) JIS B 2220:</strong> 5K,10K -JIS 2220:10K,16K,20K,30K</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Type Designation:</h5>
+                                                <ul>
+                                                    <li>Slip On Flanges</li>
+                                                    <li>Slip On Orifice Flanges</li>
+                                                    <li>Blind Flanges</li>
+                                                    <li>Weld Neck Flanges</li>
+                                                    <li>Weld Neck Orifice Flanges</li>
+                                                    <li>Long Weld Neck Flanges</li>
+                                                    <li>Heavy Barrel Long Weld Neck Flanges</li>
+                                                    <li>Lap Joint Flanges</li>
+                                                    <li>Socket Weld Flanges</li>
+                                                    <li>Threaded Flanges</li>
+                                                    <li>Threaded Orifice Flanges</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Facing:</h5>
+                                                <ul>
+                                                    <li>Flat face : “FF” (It is only used for 150 (psi) rating pipe class.)</li>
+                                                    <li>Raised face: “RF” (It is specified up to 600 (psi) rating pipe class.)</li>
+                                                    <li>Tongue and groove: (Its use is mainly dependent upon the nature of fluid to be handled.)</li>
+                                                    <li>Ring joint: “RTJ” (It is specified from 900 rating (psi) & above pipe class.)</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Pipe Standard, (SCOPE)</h5>
+                                                <ul>
+                                                    <li>ASME B 16.5 (1/2”NPS ~24”NPS) (DN-15 ~ DN-500)</li>
+                                                    <li>ASME B 16.47 (26”NPS ~60”NPS) (DN-650 ~ DN-1500)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="Carbon" class="header">
+                        <p>Carbon Steel Flanges</p>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="line"></div>
+                                    <div class="container p-3 mt-2">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead class="text-center">
+                                                    <tr>
+                                                        <th>Sr. No.</th>
+                                                        <th>Material</th>
+                                                        <th>Size</th>
+                                                        <th>Class</th>
+                                                        <th>Specification</th>
+                                                        <th>Item</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1.</td>
+                                                        <td>Forged Flanges
+                                                        </td>
+                                                        <td>15 NB
+                                                            To 750 NB</td>
+                                                        <td>
+                                                            150, 300, 600,<br>
+                                                            900 & 1500 LBS
+                                                        </td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>ASTM A105</li>
+                                                                <li>ASTM A105N</li>
+                                                                <li>ASTM A694 F42</li>
+                                                                <li>ASTM A694 F46</li>
+                                                                <li>ASTM A694 F52</li>
+                                                                <li>ASTM A694 F56</li>
+                                                                <li>ASTM A694 F60</li>
+                                                                <li>ASTM A694 F65</li>
+                                                                <li>ASTM A694 F70</li>
+                                                                <li>ASTM A350 LF3</li>
+                                                                <li>ASTM A350 LF2</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            Flanges<br>SORF<br>WNRF<br>BLRF<br>SWRF<br>LAP Joint<br>Threaded<br>Reducing
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2.</td>
+                                                        <td>Plate Flanges</td>
+                                                        <td>15 NB
+                                                            To 500 NB</td>
+                                                        <td>ASA 150, ASA 300<br>
+                                                            Table D, E, F, H<br>DIN, ND-6, 10, 16, 25, 40</td>
+                                                        <td>A-516, Gr.60/70<br>
+                                                            IS 2062<br>
+                                                            ANSI B16.5</td>
+                                                        <td>SORF<br>BLRF<br>LAP Joint & Spectacle</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="container p-3 mt-2">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th colspan="2" class="text-center">Note</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Other Grade Available:</th>
+                                                        <td>
+                                                            A-350 LF2, ASTM B-333
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>OTHER FORMS</th>
+                                                        <td>Compression Fitting / Instrumentation / Hydraulic Fitting /
+                                                            & Also As Per Drawing</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Test Certificate:</th>
+                                                        <td>Manufacturer Test Certificate as per EN 10204 / 3.1, Raw Materials Certificate, Third Party Inspection Report.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Specialize:</th>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Long Bend with Radius – R = 3D, 5D & 10D</li>
+                                                                <li>Pigabble Bend & IBR Fittings</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th></th>
+                                                        <td>Supplier Carbon Stainless Mild Steel (SS) Forged Pipe Flanges, Non ferrous, Nickel Alloy Plate Buttweld in Size 15 NB To 300 NB Stockist & Suppliers, Manufacturers, Exporters Mumbai India, 304, 304L, 304H, 316, 316L, 316LN, 316Ti, 309, 310S, 317L, 321, 347, 410, 420, 446, 202, Flanges, SORF, WNRF, BLRF, SWRF, LAP Joint, Threaded, Reducing</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="container p-3 mt-2">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <h5>Flange Dimension Standards & Pressure Grade</h5>
+                                                <ul>
+                                                    <li><strong>ASA/ANSI (USA)</strong> ANSI 125# TO 2500#</li>
+                                                    <li><strong>PN/DIN (European)</strong> DIN2527, DIN2566, DIN2573, DIN2576, DIN2641, DIN2642, DIN2655, DIN2656, DIN2627, DIN2628, DIN2629, DIN 2631, DIN2632, DIN2633, DIN2634, DIN2635, DIN2636, DIN2637, DIN2638, DIN2673</li>
+                                                    <li><strong>Pressure Class:</strong> PN 6 TO PN 320</li>
+                                                    <li><strong>BS/AS (British/Australian)</strong><br>
+                                                        (<strong>BS10:</strong> Table D,Table E,Table F,Table G,Table H, Table J Table K,)<br>
+                                                        (<strong>BS4504:</strong> PN6, PN10, PN16, PN25, PN40, PN64, PN100.)<br>
+                                                        (<strong>AS2129</strong> Table C,Table D,Table E,Table F,Table G,Table H, Table J)
+                                                    </li>
+                                                    <li><strong>JIS/KIS (Japanese/Korean) JIS B 2220:</strong> 5K,10K -JIS 2220:10K,16K,20K,30K</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Type Designation:</h5>
+                                                <ul>
+                                                    <li>Slip On Flanges</li>
+                                                    <li>Slip On Orifice Flanges</li>
+                                                    <li>Blind Flanges</li>
+                                                    <li>Weld Neck Flanges</li>
+                                                    <li>Weld Neck Orifice Flanges</li>
+                                                    <li>Long Weld Neck Flanges</li>
+                                                    <li>Heavy Barrel Long Weld Neck Flanges</li>
+                                                    <li>Lap Joint Flanges</li>
+                                                    <li>Socket Weld Flanges</li>
+                                                    <li>Threaded Flanges</li>
+                                                    <li>Threaded Orifice Flanges</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Facing:</h5>
+                                                <ul>
+                                                    <li>Flat face : “FF” (It is only used for 150 (psi) rating pipe class.)</li>
+                                                    <li>Raised face: “RF” (It is specified up to 600 (psi) rating pipe class.)</li>
+                                                    <li>Tongue and groove: (Its use is mainly dependent upon the nature of fluid to be handled.)</li>
+                                                    <li>Ring joint: “RTJ” (It is specified from 900 rating (psi) & above pipe class.)</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5>Flange Pipe Standard, (SCOPE)</h5>
+                                                <ul>
+                                                    <li>ASME B 16.5 (1/2”NPS ~24”NPS) (DN-15 ~ DN-500)</li>
+                                                    <li>ASME B 16.47 (26”NPS ~60”NPS) (DN-650 ~ DN-1500)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="products-section" class="header">
+                        <p>Flanges Products</p>
+                    </div>
+                    <section class="p-b-60">
+                        <div class="container main-container">
+                            <div class="gallery-container">
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        Bleed Ring Flange
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Flanges\Bleed Ring Flange.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        Blind Flange
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Flanges\Blind Flange.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        Expander Flange
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Flanges\expander-flange.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        Flange Adapter
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Flanges\Flange Adapter.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        Flange Olet
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Flanges\Flange Olet.png" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        Flat Face Flangee
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Flanges\flat-face-flangee.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        Forged Flange
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Flanges\Forged Flange.gif" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        Forged Socket Weld Fittings Home
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Flanges\Forged Socket Weld Fittings-Home.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        Hydraulic SAE
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Flanges\Hydraulic SAE.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                                <div class="gallery-box">
+                                    <div class="gallery-header">
+                                        Opening Flange
+                                    </div>
+                                    <div class="gallery-image">
+                                        <img src="Images\Flanges\Opening Flange.jpg" alt="Welded Pipe">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+</body>
+<!-- Fixed Footer -->
+<footer id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="heading-footer">
+                    <h3>
+                        Varcas Stainless
+                    </h3>
+                </div>
+                <div class="contain-text">
+                    <p>
+                        Varcas Stainless is a premier manufacturer of high-quality stainless products for residential, commercial, and industrial applications. Our extensive range includes sinks, countertops, handrails, balustrades, and custom fabrications, all crafted with precision and durability in mind. With our commitment to excellence and customer satisfaction, Varcas Stainless is your trusted partner for innovative stainless solutions. Experience superior quality and craftsmanship with Varcas today.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="heading-footer">
+                    <h3>
+                        Product
+                    </h3>
+                </div>
+                <div>
+                    <ul class="footer-list">
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Pipes & Tubes
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Buttwelt Fittings
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Flanges
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Fasteners
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Bars & Wire
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <a class="nav-link1" href="#">
+                                Customised Fabrication
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="heading-footer">
+                    <h3>
+                        Contact
+                    </h3>
+                </div>
+                <div>
+                    <ul class="footer-list">
+                        <li class="nav-item1">
+                            <div class="lbl-name">
+                                <h5>
+                                    Name :
+                                </h5>
+                            </div>
+                            <a class="nav-link1" href="#">
+                                VINOD BOKADIA
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <div class="lbl-name">
+                                <h5>
+                                    Mobile :
+                                </h5>
+                            </div>
+                            <a class="nav-link1" href="#">
+                                +91 9619158558
+                            </a>
+                        </li>
+                        <li class="nav-item1">
+                            <div class="lbl-name">
+                                <h5>
+                                    Email :
+                                </h5>
+                            </div>
+                            <p>
+                                If you have any questions, please email us at.
+                                <a class="nav-link1" href="mailto:info@varcasstainless.com">
+                                    info@varcasstainless.com
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="heading-footer">
+                    <h3>
+                        Show MAP
+                    </h3>
+                </div>
+                <div class="addr">
+                    <label>
+                        Address:
+                    </label>
+                    <p>
+                        Office No D-12, 1St Floor, 331/333 Fatimabai Building, Maulana Azad Road, Goldeval, Mumbai –
+                        400004. Maharashtra, India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="color: rgb(255, 255, 255); position: relative; opacity: 1;">
+    <div class="container text-center">
+        <p>
+            © 2024 Varcas Stainless. All rights reserved | Design By
+            <a href="https://www.brandedsystem.com/">
+                Branded System
+            </a>
+        </p>
+    </div>
+    </hr>
+</footer>
+
+</html>
